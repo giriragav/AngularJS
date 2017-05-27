@@ -1,7 +1,5 @@
-//var Person = 'Giri';
-
-
-logPerson();
+myNameSpace.Person = 'Giri'
+myNameSpace.logPerson();
 
 
 

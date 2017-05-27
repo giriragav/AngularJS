@@ -1,6 +1,7 @@
-var Person = 'Preethi';
-function logPerson()
+var myNameSpace = {};
+ myNameSpace.Person = 'Preethi';
+myNameSpace.logPerson = function ()
 {
-   console.log(Person);
+   console.log(myNameSpace.Person);
     
 }
