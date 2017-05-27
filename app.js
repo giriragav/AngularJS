@@ -1,14 +1,10 @@
 var myApp = angular.module('myApp',[]);
 
-myApp.controller('mainController',function($scope){
+myApp.controller('mainController',function($scope, $filter, $log){
     
-    console.log($scope);
     $scope.name = 'Giri';
-    $scope.age = 34;
-    $scope.getData = function(){
-        console.log("Writing it from scope");
-    }
-    $scope.getData();
+    $scope.forname = $filter('uppercase')($scope.name);
+    $log.info($scope.forname);
 });
 
 
