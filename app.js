@@ -1,0 +1,7 @@
+//var Person = 'Giri';
+
+
+logPerson();
+
+
+
