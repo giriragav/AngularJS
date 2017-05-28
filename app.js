@@ -7,9 +7,11 @@ var myApp = angular.module('myApp',['ngMessages']);
     $log.info($scope.forname);
 });*/
 
-myApp.controller('mainController',['$scope','$log',function($scope,$log)
+myApp.controller('mainController',['$scope','$log','$filter',function($scope,$log,$filter)
 {
-   $log.info($scope)
+    $scope.name = 'Giri';
+    $scope.forname = $filter('uppercase')($scope.name);
+    $log.info($scope.forname);
 }]);
 //myApp.controller("mainController",["$scope","$log",function(o,n){n.info(o)}]);
 
